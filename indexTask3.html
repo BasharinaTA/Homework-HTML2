@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Выбор авиарейса</title>
+    <link rel="stylesheet" href="styleTask3.css" />
+    <link rel="shortout icon" href="images/icon/Task3.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <p>Flights - Search List</p>
+          <div>
+            <a href="#">Home</a>
+            <span> / </span>
+            <a href="#">Flights Search List</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <form method="get" class="searchForm">
+          <div>
+            <label>
+              <input type="radio" name="search" value="way" checked />One
+              Way</label
+            >
+            <label
+              ><input type="radio" name="search" value="trip" />Round
+              Trip</label
+            >
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="From"
+              name="fieldFrom"
+              class="searchFormField"
+              id="fieldFrom"
+            />
+            <input
+              type="text"
+              placeholder="To"
+              name="fieldTo"
+              class="searchFormField"
+              id="fieldTo"
+            />
+            <input
+              type="text"
+              placeholder="Depart Date"
+              name="departData"
+              class="searchFormField"
+              id="departData"
+            />
+            <input
+              type="text"
+              placeholder="Return Date"
+              name="returnData"
+              class="searchFormField"
+              id="returnData"
+            />
+            <select name="fieldClass" class="searchFormField">
+              <option>Economy Class</option>
+              <option>First Class</option>
+              <option>Business Class</option>
+            </select>
+            <input
+              type="submit"
+              value="Search"
+              class="searchFormField button"
+            />
+          </div>
+        </form>
+        <div class="filterAndData">
+          <form method="get" class="filterForm">
+            <h3>Filter</h3>
+            <div>
+              <h4>No. of Stops</h4>
+              <ul>
+                <li>
+                  <label
+                    ><input type="checkbox" name="nonStop" value="nonStop" />Non
+                    Stop</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="Stop1" value="Stop1" />1
+                    Stop</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="Stops2" value="Stops2" />2+
+                    Stops</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4>Price</h4>
+              <div class="price">
+                <div>
+                  <p>Min:</p>
+                  <label>
+                    <input type="text" placeholder="0" name="minPrice" /> &#36;
+                    &nbsp;&ndash;&nbsp;
+                  </label>
+                </div>
+                <div>
+                  <p>Max:</p>
+                  <label>
+                    <input type="text" placeholder="1000" name="maxPrice" />
+                    &#36;
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h4>Airlines</h4>
+              <ul>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option1" value="a1" />Asiana
+                    Airlines</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option2" value="a2" />American
+                    Airlines</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option3" value="a3" /> Air
+                    Canada</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option4" value="a4" /> Air
+                    India</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option5" value="a5" />Jet
+                    Airways</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option5" value="a5" />
+                    Spicejet</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option6" value="a6" />
+                    IndiGo</label
+                  >
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" name="option7" value="a7" />
+                    Multiple Airlines</label
+                  >
+                </li>
+              </ul>
+            </div>
+          </form>
+          <div class="dataTable">
+            <table>
+              <caption>
+                Dehli to Sydney
+              </caption>
+              <tr>
+                <th>Airlines</th>
+                <th>Departure</th>
+                <th>Duration</th>
+                <th>Arrival</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>IndiGo</p>
+                  <span>GE-2489</span>
+                </td>
+                <td>
+                  <p>23:30</p>
+                  <span>Dehli</span>
+                </td>
+                <td>
+                  <p>18h 55m</p>
+                  <span>Non Stop</span>
+                </td>
+                <td>
+                  <p>18:15</p>
+                  <span>Sydney</span>
+                </td>
+                <td><p>&#36;980</p></td>
+                <td>
+                  <button class="button">Book</button>
+                  <p><a href="#">Flight Details</a></p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
