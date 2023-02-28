@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Форма для отправки сообщения</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styleTask2.css" />
+    <link rel="shortout icon" href="images/icon/E-Mail.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" class="form">
+        <div>
+          <h2>Contact form</h2>
+          <p>
+            Please fill in your information and we'll be sending your order.
+          </p>
+        </div>
+        <div class="inputForm">
+          <div>
+            <label>Your name</label>
+            <div>
+              <input type="text" placeholder="first name" name="firstName" />
+              <input type="text" placeholder="last name" name="lastName" />
+            </div>
+          </div>
+          <div>
+            <label>Your email</label>
+            <div>
+              <input
+                type="email"
+                placeholder="your_mail@mail.com"
+                name="userEmail"
+              />
+            </div>
+          </div>
+          <div class="phone">
+            <label>Phone *</label>
+            <div>
+              <input type="text" placeholder="000" name="sectionPhone1" />
+              <input type="text" placeholder="000" name="sectionPhone2" />
+              <input type="text" placeholder="000" name="sectionPhone3" />
+            </div>
+          </div>
+          <div>
+            <label>Message subject *</label>
+            <div>
+              <select name="messageSubject">
+                <option>Other</option>
+                <option>Group meeting</option>
+                <option>General meeting</option>
+                <option>Vacation</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Message *</label>
+            <div>
+              <textarea cols="60" rows="5" name="message"></textarea>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <label></label>
+            <div>
+              <input type="submit" value="submit form" id="button" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
